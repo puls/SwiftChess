@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A810E3961992A7BD00802FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810E3951992A7BD00802FED /* AppDelegate.swift */; };
+		A810E3981992A7BD00802FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810E3971992A7BD00802FED /* ViewController.swift */; };
+		A810E39B1992A7BD00802FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A810E3991992A7BD00802FED /* Main.storyboard */; };
+		A810E39D1992A7BD00802FED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A810E39C1992A7BD00802FED /* Images.xcassets */; };
+		A810E3A91992A7BD00802FED /* ChessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810E3A81992A7BD00802FED /* ChessTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A810E3A31992A7BD00802FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A810E3881992A7BD00802FED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A810E38F1992A7BD00802FED;
+			remoteInfo = Chess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A810E3901992A7BD00802FED /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A810E3941992A7BD00802FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A810E3951992A7BD00802FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A810E3971992A7BD00802FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A810E39A1992A7BD00802FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A810E39C1992A7BD00802FED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A810E3A21992A7BD00802FED /* ChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A810E3A71992A7BD00802FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A810E3A81992A7BD00802FED /* ChessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A810E38D1992A7BD00802FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A810E39F1992A7BD00802FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A810E3871992A7BD00802FED = {
+			isa = PBXGroup;
+			children = (
+				A810E3921992A7BD00802FED /* Chess */,
+				A810E3A51992A7BD00802FED /* ChessTests */,
+				A810E3911992A7BD00802FED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A810E3911992A7BD00802FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A810E3901992A7BD00802FED /* Chess.app */,
+				A810E3A21992A7BD00802FED /* ChessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A810E3921992A7BD00802FED /* Chess */ = {
+			isa = PBXGroup;
+			children = (
+				A810E3951992A7BD00802FED /* AppDelegate.swift */,
+				A810E3971992A7BD00802FED /* ViewController.swift */,
+				A810E3991992A7BD00802FED /* Main.storyboard */,
+				A810E39C1992A7BD00802FED /* Images.xcassets */,
+				A810E3931992A7BD00802FED /* Supporting Files */,
+			);
+			path = Chess;
+			sourceTree = "<group>";
+		};
+		A810E3931992A7BD00802FED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A810E3941992A7BD00802FED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A810E3A51992A7BD00802FED /* ChessTests */ = {
+			isa = PBXGroup;
+			children = (
+				A810E3A81992A7BD00802FED /* ChessTests.swift */,
+				A810E3A61992A7BD00802FED /* Supporting Files */,
+			);
+			path = ChessTests;
+			sourceTree = "<group>";
+		};
+		A810E3A61992A7BD00802FED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A810E3A71992A7BD00802FED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A810E38F1992A7BD00802FED /* Chess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A810E3AC1992A7BD00802FED /* Build configuration list for PBXNativeTarget "Chess" */;
+			buildPhases = (
+				A810E38C1992A7BD00802FED /* Sources */,
+				A810E38D1992A7BD00802FED /* Frameworks */,
+				A810E38E1992A7BD00802FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chess;
+			productName = Chess;
+			productReference = A810E3901992A7BD00802FED /* Chess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A810E3A11992A7BD00802FED /* ChessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A810E3AF1992A7BD00802FED /* Build configuration list for PBXNativeTarget "ChessTests" */;
+			buildPhases = (
+				A810E39E1992A7BD00802FED /* Sources */,
+				A810E39F1992A7BD00802FED /* Frameworks */,
+				A810E3A01992A7BD00802FED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A810E3A41992A7BD00802FED /* PBXTargetDependency */,
+			);
+			name = ChessTests;
+			productName = ChessTests;
+			productReference = A810E3A21992A7BD00802FED /* ChessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A810E3881992A7BD00802FED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Square, Inc.";
+				TargetAttributes = {
+					A810E38F1992A7BD00802FED = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A810E3A11992A7BD00802FED = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A810E38F1992A7BD00802FED;
+					};
+				};
+			};
+			buildConfigurationList = A810E38B1992A7BD00802FED /* Build configuration list for PBXProject "Chess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A810E3871992A7BD00802FED;
+			productRefGroup = A810E3911992A7BD00802FED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A810E38F1992A7BD00802FED /* Chess */,
+				A810E3A11992A7BD00802FED /* ChessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A810E38E1992A7BD00802FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A810E39B1992A7BD00802FED /* Main.storyboard in Resources */,
+				A810E39D1992A7BD00802FED /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A810E3A01992A7BD00802FED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A810E38C1992A7BD00802FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A810E3981992A7BD00802FED /* ViewController.swift in Sources */,
+				A810E3961992A7BD00802FED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A810E39E1992A7BD00802FED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A810E3A91992A7BD00802FED /* ChessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A810E3A41992A7BD00802FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A810E38F1992A7BD00802FED /* Chess */;
+			targetProxy = A810E3A31992A7BD00802FED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A810E3991992A7BD00802FED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A810E39A1992A7BD00802FED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A810E3AA1992A7BD00802FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A810E3AB1992A7BD00802FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A810E3AD1992A7BD00802FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Chess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A810E3AE1992A7BD00802FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Chess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A810E3B01992A7BD00802FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess.app/Chess";
+			};
+			name = Debug;
+		};
+		A810E3B11992A7BD00802FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess.app/Chess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A810E38B1992A7BD00802FED /* Build configuration list for PBXProject "Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A810E3AA1992A7BD00802FED /* Debug */,
+				A810E3AB1992A7BD00802FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A810E3AC1992A7BD00802FED /* Build configuration list for PBXNativeTarget "Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A810E3AD1992A7BD00802FED /* Debug */,
+				A810E3AE1992A7BD00802FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A810E3AF1992A7BD00802FED /* Build configuration list for PBXNativeTarget "ChessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A810E3B01992A7BD00802FED /* Debug */,
+				A810E3B11992A7BD00802FED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A810E3881992A7BD00802FED /* Project object */;
+}
