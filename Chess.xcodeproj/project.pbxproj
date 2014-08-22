@@ -12,6 +12,8 @@
 		A810E39B1992A7BD00802FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A810E3991992A7BD00802FED /* Main.storyboard */; };
 		A810E39D1992A7BD00802FED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A810E39C1992A7BD00802FED /* Images.xcassets */; };
 		A810E3A91992A7BD00802FED /* ChessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810E3A81992A7BD00802FED /* ChessTests.swift */; };
+		A810E3B41992B28600802FED /* Pieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810E3B31992B28600802FED /* Pieces.swift */; };
+		A891FFB01992DDFD00711335 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = A891FFAF1992DDFD00711335 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 		A810E3A21992A7BD00802FED /* ChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A810E3A71992A7BD00802FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A810E3A81992A7BD00802FED /* ChessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTests.swift; sourceTree = "<group>"; };
+		A810E3B31992B28600802FED /* Pieces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pieces.swift; sourceTree = "<group>"; };
+		A81B381B1993249C0085A74A /* Testing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Testing.playground; sourceTree = "<group>"; };
+		A891FFAF1992DDFD00711335 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 		A810E3871992A7BD00802FED = {
 			isa = PBXGroup;
 			children = (
+				A81B381B1993249C0085A74A /* Testing.playground */,
 				A810E3921992A7BD00802FED /* Chess */,
 				A810E3A51992A7BD00802FED /* ChessTests */,
 				A810E3911992A7BD00802FED /* Products */,
@@ -75,6 +81,7 @@
 		A810E3921992A7BD00802FED /* Chess */ = {
 			isa = PBXGroup;
 			children = (
+				A810E3B21992B27B00802FED /* Model */,
 				A810E3951992A7BD00802FED /* AppDelegate.swift */,
 				A810E3971992A7BD00802FED /* ViewController.swift */,
 				A810E3991992A7BD00802FED /* Main.storyboard */,
@@ -107,6 +114,15 @@
 				A810E3A71992A7BD00802FED /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A810E3B21992B27B00802FED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A810E3B31992B28600802FED /* Pieces.swift */,
+				A891FFAF1992DDFD00711335 /* Board.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A810E3981992A7BD00802FED /* ViewController.swift in Sources */,
+				A810E3B41992B28600802FED /* Pieces.swift in Sources */,
+				A891FFB01992DDFD00711335 /* Board.swift in Sources */,
 				A810E3961992A7BD00802FED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +348,7 @@
 				INFOPLIST_FILE = Chess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -341,6 +360,7 @@
 				INFOPLIST_FILE = Chess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -397,6 +417,7 @@
 				A810E3AE1992A7BD00802FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A810E3AF1992A7BD00802FED /* Build configuration list for PBXNativeTarget "ChessTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +426,7 @@
 				A810E3B11992A7BD00802FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
