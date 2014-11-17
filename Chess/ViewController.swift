@@ -74,7 +74,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, BoardDelegat
     @IBOutlet weak var collectionView: UICollectionView!
 
     private var allMoves = [Move]()
-    func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Move", forIndexPath: indexPath) as MoveCell
         let move = allMoves[indexPath.item]
         let piece = move.piece
@@ -83,7 +83,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, BoardDelegat
         return cell
     }
 
-    func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return allMoves.count
     }
 
