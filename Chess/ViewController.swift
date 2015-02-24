@@ -46,7 +46,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, BoardDelegat
     }
 
     private func updateScores() {
-//        scoreLabel.text = "White: \(board.whiteScore) Black: \(board.blackScore)"
     }
 
     struct Move {
@@ -57,8 +56,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, BoardDelegat
 
         var description: String {
             var string = piece.algebraicName
-            if let capturedPiece_ = capturedPiece {
-                if countElements(string) == 0 {
+            if capturedPiece != nil {
+                if count(string) == 0 {
                     string += String(Array("abcdefgh")[from.col])
                 }
                 string += "x"
@@ -75,7 +74,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, BoardDelegat
 
     private var allMoves = [Move]()
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Move", forIndexPath: indexPath) as MoveCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Move", forIndexPath: indexPath) as! MoveCell
         let move = allMoves[indexPath.item]
         let piece = move.piece
         cell.configureWithColor(piece.color)
@@ -164,7 +163,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, BoardDelegat
             }
             UIView.animateWithDuration(0.2, delay: 0.0, usingSpringWithDamping: 100.0, initialSpringVelocity: 0.0, options: nil, animations: animations, completion: nil)
             allMoves.append(Move(piece: piece, capturedPiece: nil, from: fromCoordinate, to: toCoordinate))
-            collectionView.insertItemsAtIndexPaths([NSIndexPath(forItem: allMoves.count - 1, inSection: 0)])
+            let newIndexPath = NSIndexPath(forItem: allMoves.count - 1, inSection: 0)
+            collectionView.insertItemsAtIndexPaths([newIndexPath])
+            collectionView.scrollToItemAtIndexPath(newIndexPath, atScrollPosition: .Bottom, animated: true)
         }
     }
 

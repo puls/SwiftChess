@@ -184,7 +184,7 @@ class Board {
         pieceStorage = [:]
 
         func addPieceToBoard(piece: Piece, row: Int, col: Int) {
-            pieceStorage[Coordinate(row: row, col: col)] = piece
+            self.pieceStorage[Coordinate(row: row, col: col)] = piece
         }
 
         for col in 0..<8 {

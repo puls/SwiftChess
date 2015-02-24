@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNA-EX-Kmr">
-                                <rect key="frame" x="20" y="0.0" width="728" height="728"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNA-EX-Kmr" userLabel="Board View">
+                                <rect key="frame" x="20" y="36" width="728" height="728"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vNA-EX-Kmr" secondAttribute="height" multiplier="1:1" id="Cxy-qF-6he"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NKq-ig-Y9k">
-                                <rect key="frame" x="20" y="744" width="728" height="280"/>
+                                <rect key="frame" x="20" y="780" width="728" height="228"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5N2-xq-jrl">
                                     <size key="itemSize" width="91" height="91"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -67,11 +67,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vNA-EX-Kmr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6B8-1U-6jo"/>
+                            <constraint firstItem="vNA-EX-Kmr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Err-cS-RSk"/>
                             <constraint firstItem="vNA-EX-Kmr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Pkh-Wf-nlF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vNA-EX-Kmr" secondAttribute="trailing" id="XSt-Tz-9ED"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NKq-ig-Y9k" secondAttribute="bottom" id="k1E-Dv-Fya"/>
-                            <constraint firstItem="vNA-EX-Kmr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="nLO-a8-wTI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NKq-ig-Y9k" secondAttribute="bottom" constant="16" id="k1E-Dv-Fya"/>
                             <constraint firstItem="NKq-ig-Y9k" firstAttribute="top" secondItem="vNA-EX-Kmr" secondAttribute="bottom" constant="16" id="rYZ-uK-fse"/>
                             <constraint firstItem="NKq-ig-Y9k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rZ8-Mi-s7w"/>
                             <constraint firstAttribute="centerX" secondItem="vNA-EX-Kmr" secondAttribute="centerX" id="tgX-Ks-Hkb"/>
@@ -79,10 +78,7 @@
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics">
-                        <size key="portraitSize" width="768" height="1024"/>
-                        <size key="landscapeSize" width="1024" height="768"/>
-                    </simulatedScreenMetrics>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="boardView" destination="vNA-EX-Kmr" id="IdT-Ij-rNg"/>
                         <outlet property="collectionView" destination="NKq-ig-Y9k" id="mtc-yo-txz"/>
